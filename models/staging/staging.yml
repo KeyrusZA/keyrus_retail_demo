@@ -1,0 +1,75 @@
+version: 2
+
+models:
+  - name: stg_customers
+    description: One row per customer, cleaned and typed from the raw load.
+    columns:
+      - name: customer_id
+        description: Unique customer identifier.
+        tests:
+          - unique
+          - not_null
+      - name: province
+        description: South African province the customer is registered in.
+        tests:
+          - accepted_values:
+              values:
+                - Gauteng
+                - Western Cape
+                - KwaZulu-Natal
+                - Eastern Cape
+                - Free State
+                - Mpumalanga
+                - Limpopo
+                - North West
+                - Northern Cape
+
+  - name: stg_products
+    description: One row per product with pricing in ZAR.
+    columns:
+      - name: product_id
+        tests:
+          - unique
+          - not_null
+      - name: category
+        tests:
+          - not_null
+
+  - name: stg_orders
+    description: One row per order header.
+    columns:
+      - name: order_id
+        tests:
+          - unique
+          - not_null
+      - name: customer_id
+        description: Every order must belong to a known customer.
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stg_customers')
+              field: customer_id
+      - name: order_status
+        tests:
+          - accepted_values:
+              values: ['completed', 'returned', 'cancelled']
+
+  - name: stg_order_items
+    description: One row per order line item.
+    columns:
+      - name: order_item_id
+        tests:
+          - unique
+          - not_null
+      - name: order_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stg_orders')
+              field: order_id
+      - name: product_id
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stg_products')
+              field: product_id

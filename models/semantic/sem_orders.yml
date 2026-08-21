@@ -1,0 +1,31 @@
+version: 2
+
+semantic_models:
+  - name: orders
+    label: Orders
+    description: Order-header grain semantic model, used for order counts.
+    model: ref('fct_orders')
+    defaults:
+      agg_time_dimension: order_date
+
+    entities:
+      - name: order_record
+        type: primary
+        expr: order_id
+      - name: customer
+        type: foreign
+        expr: customer_id
+
+    dimensions:
+      - name: order_date
+        type: time
+        type_params:
+          time_granularity: day
+      - name: order_status
+        type: categorical
+
+    measures:
+      - name: order_count
+        label: Order count
+        agg: count
+        expr: order_id

@@ -1,0 +1,36 @@
+product_id,product_name,category,unit_price_zar,unit_cost_zar
+P001,Rooibos Tea 80s,Groceries,54.99,31.00
+P002,Maize Meal 5kg,Groceries,89.99,62.00
+P003,Biltong 250g,Groceries,129.99,78.00
+P004,Boerewors 1kg,Groceries,119.99,74.00
+P005,Rusks Buttermilk 500g,Groceries,64.99,38.00
+P006,Chutney 470g,Groceries,42.99,24.00
+P007,Sparkling Water 6-pack,Groceries,74.99,44.00
+P008,Peanut Butter 800g,Groceries,79.99,49.00
+P009,Wireless Earbuds,Electronics,1299.00,820.00
+P010,Smart TV 55in,Electronics,8999.00,6400.00
+P011,Laptop 14in,Electronics,12999.00,9600.00
+P012,Bluetooth Speaker,Electronics,899.00,540.00
+P013,Power Bank 20000mAh,Electronics,549.00,310.00
+P014,LED Load-shedding Lamp,Electronics,349.00,180.00
+P015,Inverter Trolley 1kVA,Electronics,6499.00,4700.00
+P016,Smartphone 128GB,Electronics,7499.00,5500.00
+P017,Men's Golf Shirt,Apparel,449.00,210.00
+P018,Women's Sneakers,Apparel,1199.00,640.00
+P019,Kids' School Shoes,Apparel,399.00,205.00
+P020,Rugby Jersey,Apparel,999.00,520.00
+P021,Denim Jeans,Apparel,699.00,350.00
+P022,Winter Puffer Jacket,Apparel,1499.00,790.00
+P023,Braai Grid Stainless,Home & Garden,379.00,190.00
+P024,Potjie Pot No.3,Home & Garden,649.00,360.00
+P025,Garden Hose 20m,Home & Garden,299.00,150.00
+P026,Solar Garden Lights 4pk,Home & Garden,249.00,120.00
+P027,Cast Iron Skillet,Home & Garden,549.00,290.00
+P028,Duvet Set Queen,Home & Garden,799.00,410.00
+P029,Vitamin C 1000mg 60s,Health & Beauty,149.99,72.00
+P030,Sunscreen SPF50 200ml,Health & Beauty,189.99,95.00
+P031,Shea Body Lotion 400ml,Health & Beauty,119.99,58.00
+P032,Electric Toothbrush,Health & Beauty,749.00,420.00
+P033,Gift Card R250,Gift Cards,250.00,250.00
+P034,Gift Card R500,Gift Cards,500.00,500.00
+P035,Gift Card R1000,Gift Cards,1000.00,1000.00

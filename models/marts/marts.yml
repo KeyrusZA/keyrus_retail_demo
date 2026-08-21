@@ -1,0 +1,79 @@
+version: 2
+
+models:
+  - name: dim_customers
+    description: >
+      Customer dimension: one row per customer with province, segment and
+      lifetime order stats. Joined to facts through the semantic layer.
+    columns:
+      - name: customer_id
+        description: Unique customer identifier (primary key).
+        tests:
+          - unique
+          - not_null
+      - name: province
+        description: South African province, used as a core reporting dimension.
+        tests:
+          - not_null
+
+  - name: fct_orders
+    description: >
+      Order fact: one row per order header with rolled-up line item amounts
+      in ZAR. Cancelled and returned orders are kept with a status flag so
+      that metric definitions decide what counts as revenue.
+    columns:
+      - name: order_id
+        description: Unique order identifier (primary key).
+        tests:
+          - unique
+          - not_null
+      - name: customer_id
+        description: Foreign key to dim_customers.
+        tests:
+          - not_null
+          - relationships:
+              to: ref('dim_customers')
+              field: customer_id
+      - name: net_amount_zar
+        description: Gross amount minus discounts, in ZAR.
+        tests:
+          - not_null
+
+  - name: fct_order_items
+    description: >
+      Order line item fact: one row per item sold, enriched with product
+      category and order attributes. This is the model the dbt Semantic
+      Layer metrics are defined on.
+    columns:
+      - name: order_item_id
+        description: Unique line item identifier (primary key).
+        tests:
+          - unique
+          - not_null
+      - name: net_amount_zar
+        description: Line net revenue in ZAR (gross minus line discount).
+        tests:
+          - not_null
+      - name: product_category
+        description: Product category at time of sale.
+        tests:
+          - not_null
+
+exposures:
+  - name: retail_performance_dashboard
+    label: Retail Performance Dashboard (Tableau)
+    type: dashboard
+    maturity: high
+    url: https://prod-uk-a.online.tableau.com/#/site/keyrusdemo/workbooks
+    description: >
+      Executive Tableau dashboard tracking net revenue, orders and average
+      order value by province, channel and product category. Consumes
+      governed metrics from the dbt Semantic Layer — no calculated fields
+      or manual SQL in the workbook.
+    depends_on:
+      - ref('fct_orders')
+      - ref('fct_order_items')
+      - ref('dim_customers')
+    owner:
+      name: Dandre Diedericks
+      email: dandre.diedericks@keyrus.co.za

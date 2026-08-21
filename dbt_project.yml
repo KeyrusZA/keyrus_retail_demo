@@ -1,0 +1,49 @@
+name: "keyrus_retail_demo"
+version: "1.0.0"
+
+profile: "keyrus_retail_demo"
+
+model-paths: ["models"]
+seed-paths: ["seeds"]
+test-paths: ["tests"]
+analysis-paths: ["analyses"]
+macro-paths: ["macros"]
+
+target-path: "target"
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+require-dbt-version: ">=1.8.0"
+
+models:
+  keyrus_retail_demo:
+    staging:
+      +materialized: view
+      +schema: staging
+    marts:
+      +materialized: table
+      +schema: marts
+
+seeds:
+  keyrus_retail_demo:
+    +schema: raw
+    raw_customers:
+      +column_types:
+        customer_id: varchar
+        signup_date: date
+    raw_products:
+      +column_types:
+        product_id: varchar
+        unit_price_zar: "numeric(12,2)"
+        unit_cost_zar: "numeric(12,2)"
+    raw_orders:
+      +column_types:
+        order_id: varchar
+        order_date: date
+    raw_order_items:
+      +column_types:
+        order_item_id: varchar
+        quantity: integer
+        unit_price_zar: "numeric(12,2)"
+        discount_zar: "numeric(12,2)"

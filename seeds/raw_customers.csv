@@ -1,0 +1,501 @@
+customer_id,first_name,last_name,email,province,city,customer_segment,signup_date
+C0001,Thabo,Radebe,thabo.radebe1@example.co.za,KwaZulu-Natal,Pietermaritzburg,Consumer,2022-12-11
+C0002,Dandre,Radebe,dandre.radebe2@example.co.za,Eastern Cape,Gqeberha,Consumer,2022-05-05
+C0003,Pieter,Khumalo,pieter.khumalo3@example.co.za,Gauteng,Johannesburg,Consumer,2026-03-06
+C0004,Fatima,Ngcobo,fatima.ngcobo4@example.co.za,KwaZulu-Natal,Durban,Consumer,2023-09-21
+C0005,Thabo,Smit,thabo.smit5@example.co.za,Free State,Bloemfontein,Consumer,2024-01-26
+C0006,Pieter,Smit,pieter.smit6@example.co.za,Gauteng,Midrand,Consumer,2024-04-17
+C0007,Elmarie,Sithole,elmarie.sithole7@example.co.za,Gauteng,Midrand,Business,2026-04-03
+C0008,Naledi,Petersen,naledi.petersen8@example.co.za,Western Cape,Cape Town,Consumer,2025-09-08
+C0009,Elmarie,Sithole,elmarie.sithole9@example.co.za,KwaZulu-Natal,Umhlanga,Consumer,2022-07-21
+C0010,Zanele,Smit,zanele.smit10@example.co.za,Gauteng,Midrand,Business,2023-06-20
+C0011,David,Jacobs,david.jacobs11@example.co.za,Mpumalanga,Witbank,Consumer,2024-03-17
+C0012,Nomvula,Pretorius,nomvula.pretorius12@example.co.za,Gauteng,Midrand,Consumer,2025-12-29
+C0013,Busisiwe,Abrahams,busisiwe.abrahams13@example.co.za,KwaZulu-Natal,Durban,Consumer,2023-07-15
+C0014,David,Jacobs,david.jacobs14@example.co.za,Gauteng,Pretoria,Consumer,2026-06-21
+C0015,Zanele,van der Merwe,zanele.vandermerwe15@example.co.za,Eastern Cape,East London,Consumer,2022-07-14
+C0016,Werner,Coetzee,werner.coetzee16@example.co.za,Gauteng,Midrand,Consumer,2024-12-17
+C0017,Priya,Abrahams,priya.abrahams17@example.co.za,Western Cape,George,Consumer,2022-12-11
+C0018,Fatima,du Plessis,fatima.duplessis18@example.co.za,Gauteng,Midrand,Consumer,2024-07-25
+C0019,David,Sithole,david.sithole19@example.co.za,Mpumalanga,Mbombela,Business,2022-12-09
+C0020,Sipho,Smit,sipho.smit20@example.co.za,Western Cape,Cape Town,Business,2023-01-08
+C0021,Sarah,Mabaso,sarah.mabaso21@example.co.za,KwaZulu-Natal,Pietermaritzburg,Consumer,2024-04-27
+C0022,Sibusiso,Molefe,sibusiso.molefe22@example.co.za,Western Cape,Paarl,Business,2022-03-24
+C0023,Naledi,Mabaso,naledi.mabaso23@example.co.za,KwaZulu-Natal,Umhlanga,Consumer,2026-06-22
+C0024,Naledi,Mahlangu,naledi.mahlangu24@example.co.za,KwaZulu-Natal,Pietermaritzburg,Consumer,2022-03-07
+C0025,Lwazi,Radebe,lwazi.radebe25@example.co.za,North West,Potchefstroom,Business,2026-06-08
+C0026,Priya,Botha,priya.botha26@example.co.za,Gauteng,Midrand,Business,2025-01-03
+C0027,Johan,Sithole,johan.sithole27@example.co.za,KwaZulu-Natal,Durban,Consumer,2025-02-19
+C0028,Busisiwe,Fourie,busisiwe.fourie28@example.co.za,Limpopo,Tzaneen,Consumer,2024-03-13
+C0029,Mandla,Mahlangu,mandla.mahlangu29@example.co.za,Mpumalanga,Mbombela,Consumer,2025-05-05
+C0030,Sipho,Radebe,sipho.radebe30@example.co.za,North West,Potchefstroom,Business,2026-06-05
+C0031,Johan,Mokoena,johan.mokoena31@example.co.za,Western Cape,George,Business,2023-02-02
+C0032,Elmarie,Venter,elmarie.venter32@example.co.za,Gauteng,Soweto,Business,2025-03-09
+C0033,Precious,Pretorius,precious.pretorius33@example.co.za,Eastern Cape,East London,Consumer,2025-12-05
+C0034,Sibusiso,Molefe,sibusiso.molefe34@example.co.za,KwaZulu-Natal,Pietermaritzburg,Consumer,2023-06-04
+C0035,Thabo,Zulu,thabo.zulu35@example.co.za,Gauteng,Pretoria,Consumer,2022-03-15
+C0036,Craig,van der Merwe,craig.vandermerwe36@example.co.za,Gauteng,Pretoria,Consumer,2022-05-04
+C0037,Sipho,Molefe,sipho.molefe37@example.co.za,Mpumalanga,Mbombela,Consumer,2024-11-19
+C0038,Johan,Radebe,johan.radebe38@example.co.za,Gauteng,Soweto,Consumer,2024-10-24
+C0039,Pieter,Botha,pieter.botha39@example.co.za,Free State,Bloemfontein,Consumer,2024-02-24
+C0040,Sibusiso,Radebe,sibusiso.radebe40@example.co.za,Western Cape,Cape Town,Consumer,2025-10-14
+C0041,David,Radebe,david.radebe41@example.co.za,Gauteng,Midrand,Business,2022-10-10
+C0042,Pieter,du Plessis,pieter.duplessis42@example.co.za,Gauteng,Soweto,Consumer,2023-03-11
+C0043,Zanele,Dlamini,zanele.dlamini43@example.co.za,Gauteng,Soweto,Business,2025-04-01
+C0044,Craig,du Plessis,craig.duplessis44@example.co.za,Gauteng,Johannesburg,Business,2026-05-22
+C0045,Annelie,Ngcobo,annelie.ngcobo45@example.co.za,Free State,Welkom,Consumer,2024-05-30
+C0046,Annelie,Petersen,annelie.petersen46@example.co.za,Limpopo,Polokwane,Business,2023-08-26
+C0047,Sarah,Steyn,sarah.steyn47@example.co.za,Limpopo,Tzaneen,Consumer,2026-04-05
+C0048,Fatima,Mabaso,fatima.mabaso48@example.co.za,Northern Cape,Upington,Consumer,2023-10-29
+C0049,Lerato,Zulu,lerato.zulu49@example.co.za,Gauteng,Johannesburg,Consumer,2022-06-26
+C0050,Megan,Molefe,megan.molefe50@example.co.za,Gauteng,Pretoria,Consumer,2025-01-04
+C0051,Annelie,Dlamini,annelie.dlamini51@example.co.za,Gauteng,Johannesburg,Consumer,2023-06-25
+C0052,Lwazi,Zulu,lwazi.zulu52@example.co.za,Western Cape,Stellenbosch,Consumer,2022-05-21
+C0053,Chantel,Mabaso,chantel.mabaso53@example.co.za,KwaZulu-Natal,Umhlanga,Consumer,2023-12-08
+C0054,Pieter,Mabaso,pieter.mabaso54@example.co.za,Limpopo,Tzaneen,Consumer,2024-05-19
+C0055,Craig,Mahlangu,craig.mahlangu55@example.co.za,Gauteng,Soweto,Consumer,2026-05-18
+C0056,Thabo,Steyn,thabo.steyn56@example.co.za,Limpopo,Polokwane,Consumer,2023-05-11
+C0057,Johan,Sithole,johan.sithole57@example.co.za,Western Cape,Cape Town,Business,2024-03-26
+C0058,Sibusiso,du Plessis,sibusiso.duplessis58@example.co.za,Gauteng,Midrand,Consumer,2025-10-30
+C0059,Dandre,du Plessis,dandre.duplessis59@example.co.za,Western Cape,Paarl,Business,2022-09-29
+C0060,Johan,Jacobs,johan.jacobs60@example.co.za,Limpopo,Polokwane,Business,2026-04-29
+C0061,Kagiso,Mahlangu,kagiso.mahlangu61@example.co.za,Western Cape,Stellenbosch,Consumer,2023-04-21
+C0062,Elmarie,Jacobs,elmarie.jacobs62@example.co.za,KwaZulu-Natal,Umhlanga,Consumer,2022-06-13
+C0063,Chantel,Jacobs,chantel.jacobs63@example.co.za,Gauteng,Johannesburg,Consumer,2026-06-27
+C0064,Kagiso,Naidoo,kagiso.naidoo64@example.co.za,Gauteng,Soweto,Consumer,2024-07-23
+C0065,Naledi,Dlamini,naledi.dlamini65@example.co.za,KwaZulu-Natal,Umhlanga,Business,2025-03-22
+C0066,Nomvula,Zulu,nomvula.zulu66@example.co.za,Gauteng,Pretoria,Consumer,2022-05-25
+C0067,Lwazi,van der Merwe,lwazi.vandermerwe67@example.co.za,Gauteng,Midrand,Consumer,2023-07-25
+C0068,Nomvula,Smit,nomvula.smit68@example.co.za,KwaZulu-Natal,Umhlanga,Business,2024-06-10
+C0069,Ruan,Mokoena,ruan.mokoena69@example.co.za,Northern Cape,Kimberley,Business,2023-02-26
+C0070,Thabo,Naidoo,thabo.naidoo70@example.co.za,Mpumalanga,Witbank,Business,2024-06-21
+C0071,Elmarie,Radebe,elmarie.radebe71@example.co.za,Free State,Bloemfontein,Consumer,2026-02-04
+C0072,Elmarie,van der Merwe,elmarie.vandermerwe72@example.co.za,Gauteng,Soweto,Consumer,2024-09-28
+C0073,Mandla,Khumalo,mandla.khumalo73@example.co.za,Western Cape,Stellenbosch,Consumer,2023-03-31
+C0074,Kagiso,Dlamini,kagiso.dlamini74@example.co.za,Western Cape,Paarl,Consumer,2025-01-07
+C0075,Mandla,du Plessis,mandla.duplessis75@example.co.za,Western Cape,Paarl,Business,2022-10-23
+C0076,Kagiso,Naidoo,kagiso.naidoo76@example.co.za,Mpumalanga,Witbank,Consumer,2025-07-04
+C0077,Ruan,Fourie,ruan.fourie77@example.co.za,Western Cape,George,Consumer,2025-01-11
+C0078,Lwazi,Zulu,lwazi.zulu78@example.co.za,Gauteng,Pretoria,Consumer,2026-02-19
+C0079,Tshepo,du Plessis,tshepo.duplessis79@example.co.za,Western Cape,Stellenbosch,Consumer,2022-07-22
+C0080,Priya,Fourie,priya.fourie80@example.co.za,North West,Potchefstroom,Consumer,2022-11-11
+C0081,Ayesha,Molefe,ayesha.molefe81@example.co.za,KwaZulu-Natal,Pietermaritzburg,Consumer,2023-12-29
+C0082,Ayesha,du Plessis,ayesha.duplessis82@example.co.za,Western Cape,Stellenbosch,Consumer,2025-11-21
+C0083,Dandre,Radebe,dandre.radebe83@example.co.za,North West,Rustenburg,Consumer,2023-11-07
+C0084,Mandla,Nkosi,mandla.nkosi84@example.co.za,Western Cape,Paarl,Consumer,2024-07-28
+C0085,Busisiwe,Abrahams,busisiwe.abrahams85@example.co.za,Eastern Cape,East London,Consumer,2024-08-22
+C0086,Tshepo,Pillay,tshepo.pillay86@example.co.za,KwaZulu-Natal,Umhlanga,Consumer,2022-08-21
+C0087,Dandre,Abrahams,dandre.abrahams87@example.co.za,Gauteng,Midrand,Consumer,2026-05-17
+C0088,Ayesha,Khumalo,ayesha.khumalo88@example.co.za,Gauteng,Pretoria,Consumer,2022-06-03
+C0089,Megan,Venter,megan.venter89@example.co.za,Gauteng,Johannesburg,Consumer,2025-09-10
+C0090,Precious,Coetzee,precious.coetzee90@example.co.za,KwaZulu-Natal,Pietermaritzburg,Consumer,2023-07-13
+C0091,Precious,Nkosi,precious.nkosi91@example.co.za,Gauteng,Johannesburg,Consumer,2023-05-23
+C0092,Precious,Molefe,precious.molefe92@example.co.za,Gauteng,Soweto,Consumer,2023-07-24
+C0093,Naledi,Steyn,naledi.steyn93@example.co.za,Limpopo,Polokwane,Business,2025-11-27
+C0094,Fatima,Venter,fatima.venter94@example.co.za,Western Cape,Paarl,Business,2024-08-23
+C0095,Ruan,Molefe,ruan.molefe95@example.co.za,KwaZulu-Natal,Pietermaritzburg,Business,2025-03-27
+C0096,Annelie,Radebe,annelie.radebe96@example.co.za,Western Cape,George,Consumer,2026-05-18
+C0097,Craig,Jacobs,craig.jacobs97@example.co.za,Gauteng,Soweto,Consumer,2023-09-14
+C0098,Precious,Mahlangu,precious.mahlangu98@example.co.za,Western Cape,Stellenbosch,Consumer,2023-12-15
+C0099,Sipho,Mokoena,sipho.mokoena99@example.co.za,Mpumalanga,Mbombela,Consumer,2026-01-20
+C0100,Pieter,Dlamini,pieter.dlamini100@example.co.za,Gauteng,Soweto,Consumer,2025-03-16
+C0101,Lerato,Pretorius,lerato.pretorius101@example.co.za,Western Cape,George,Consumer,2026-06-24
+C0102,Precious,Nkosi,precious.nkosi102@example.co.za,KwaZulu-Natal,Umhlanga,Consumer,2022-03-13
+C0103,Ayesha,Smit,ayesha.smit103@example.co.za,North West,Potchefstroom,Business,2024-07-06
+C0104,Ruan,du Plessis,ruan.duplessis104@example.co.za,Western Cape,Stellenbosch,Consumer,2023-09-10
+C0105,Thabo,Petersen,thabo.petersen105@example.co.za,Western Cape,Paarl,Consumer,2024-06-06
+C0106,Mandla,Steyn,mandla.steyn106@example.co.za,Eastern Cape,Gqeberha,Business,2025-02-26
+C0107,David,Zulu,david.zulu107@example.co.za,Gauteng,Johannesburg,Consumer,2024-07-25
+C0108,Sibusiso,Naidoo,sibusiso.naidoo108@example.co.za,Gauteng,Johannesburg,Consumer,2023-12-31
+C0109,Riaan,Fourie,riaan.fourie109@example.co.za,Gauteng,Soweto,Consumer,2024-07-11
+C0110,Sipho,Pillay,sipho.pillay110@example.co.za,Gauteng,Johannesburg,Consumer,2022-06-15
+C0111,Nomvula,Khumalo,nomvula.khumalo111@example.co.za,Northern Cape,Kimberley,Business,2025-10-25
+C0112,Thabo,Khumalo,thabo.khumalo112@example.co.za,Gauteng,Pretoria,Business,2025-08-24
+C0113,Johan,Pillay,johan.pillay113@example.co.za,Gauteng,Johannesburg,Consumer,2023-05-21
+C0114,Kagiso,Smit,kagiso.smit114@example.co.za,Western Cape,Paarl,Consumer,2025-07-26
+C0115,Precious,Botha,precious.botha115@example.co.za,North West,Rustenburg,Business,2022-10-08
+C0116,Priya,Mahlangu,priya.mahlangu116@example.co.za,KwaZulu-Natal,Umhlanga,Consumer,2024-04-07
+C0117,Precious,Pretorius,precious.pretorius117@example.co.za,Western Cape,Cape Town,Consumer,2025-09-05
+C0118,Precious,Smit,precious.smit118@example.co.za,Gauteng,Midrand,Business,2025-07-12
+C0119,Sarah,Zulu,sarah.zulu119@example.co.za,Free State,Bloemfontein,Consumer,2024-07-25
+C0120,Sipho,Molefe,sipho.molefe120@example.co.za,KwaZulu-Natal,Umhlanga,Consumer,2024-07-08
+C0121,Naledi,Ngcobo,naledi.ngcobo121@example.co.za,Free State,Welkom,Consumer,2024-09-27
+C0122,Chantel,Naidoo,chantel.naidoo122@example.co.za,KwaZulu-Natal,Umhlanga,Consumer,2025-10-23
+C0123,Sarah,du Plessis,sarah.duplessis123@example.co.za,Gauteng,Soweto,Consumer,2026-04-06
+C0124,Riaan,Khumalo,riaan.khumalo124@example.co.za,KwaZulu-Natal,Durban,Consumer,2024-09-09
+C0125,Sibusiso,Zulu,sibusiso.zulu125@example.co.za,Gauteng,Soweto,Consumer,2024-12-07
+C0126,Annelie,Pillay,annelie.pillay126@example.co.za,Mpumalanga,Mbombela,Consumer,2023-08-12
+C0127,Lwazi,Venter,lwazi.venter127@example.co.za,Western Cape,Paarl,Consumer,2025-01-22
+C0128,Sipho,Khumalo,sipho.khumalo128@example.co.za,North West,Potchefstroom,Consumer,2026-05-31
+C0129,Megan,Abrahams,megan.abrahams129@example.co.za,Gauteng,Soweto,Consumer,2022-04-05
+C0130,Zanele,Petersen,zanele.petersen130@example.co.za,Gauteng,Pretoria,Consumer,2025-06-04
+C0131,Fatima,Molefe,fatima.molefe131@example.co.za,Western Cape,Paarl,Consumer,2026-05-06
+C0132,Nomvula,Coetzee,nomvula.coetzee132@example.co.za,Western Cape,George,Consumer,2023-07-28
+C0133,Ruan,Pretorius,ruan.pretorius133@example.co.za,Gauteng,Midrand,Consumer,2025-03-02
+C0134,Precious,Naidoo,precious.naidoo134@example.co.za,North West,Rustenburg,Consumer,2024-11-16
+C0135,Werner,Smit,werner.smit135@example.co.za,Gauteng,Midrand,Business,2023-04-02
+C0136,Nomvula,Naidoo,nomvula.naidoo136@example.co.za,Gauteng,Midrand,Consumer,2025-02-26
+C0137,Lerato,van der Merwe,lerato.vandermerwe137@example.co.za,Gauteng,Midrand,Consumer,2022-11-14
+C0138,Katlego,Pillay,katlego.pillay138@example.co.za,KwaZulu-Natal,Durban,Business,2025-05-19
+C0139,Megan,Steyn,megan.steyn139@example.co.za,Gauteng,Midrand,Consumer,2022-06-14
+C0140,Elmarie,Pillay,elmarie.pillay140@example.co.za,Gauteng,Johannesburg,Business,2024-05-29
+C0141,Werner,Abrahams,werner.abrahams141@example.co.za,Western Cape,Cape Town,Consumer,2025-04-26
+C0142,Sipho,Khumalo,sipho.khumalo142@example.co.za,North West,Rustenburg,Consumer,2024-06-30
+C0143,Sarah,Venter,sarah.venter143@example.co.za,KwaZulu-Natal,Durban,Consumer,2024-04-18
+C0144,Sibusiso,Mahlangu,sibusiso.mahlangu144@example.co.za,Western Cape,George,Consumer,2025-08-23
+C0145,Ruan,Botha,ruan.botha145@example.co.za,Gauteng,Pretoria,Consumer,2023-08-24
+C0146,Annelie,Khumalo,annelie.khumalo146@example.co.za,KwaZulu-Natal,Durban,Consumer,2023-01-15
+C0147,Sibusiso,Coetzee,sibusiso.coetzee147@example.co.za,Gauteng,Soweto,Consumer,2023-06-18
+C0148,Ayesha,Coetzee,ayesha.coetzee148@example.co.za,Gauteng,Soweto,Consumer,2023-06-22
+C0149,Sarah,Abrahams,sarah.abrahams149@example.co.za,Limpopo,Polokwane,Consumer,2025-03-20
+C0150,Johan,Jacobs,johan.jacobs150@example.co.za,Gauteng,Pretoria,Consumer,2023-02-03
+C0151,Busisiwe,Radebe,busisiwe.radebe151@example.co.za,Eastern Cape,East London,Consumer,2024-10-15
+C0152,Precious,Petersen,precious.petersen152@example.co.za,KwaZulu-Natal,Pietermaritzburg,Consumer,2024-12-06
+C0153,Busisiwe,van der Merwe,busisiwe.vandermerwe153@example.co.za,Western Cape,George,Consumer,2025-07-19
+C0154,Sipho,Khumalo,sipho.khumalo154@example.co.za,Gauteng,Johannesburg,Business,2025-12-06
+C0155,Werner,van der Merwe,werner.vandermerwe155@example.co.za,Free State,Bloemfontein,Consumer,2025-10-25
+C0156,Kagiso,Naidoo,kagiso.naidoo156@example.co.za,Western Cape,George,Consumer,2024-12-02
+C0157,Megan,Sithole,megan.sithole157@example.co.za,North West,Potchefstroom,Consumer,2025-12-02
+C0158,Annelie,Fourie,annelie.fourie158@example.co.za,Gauteng,Soweto,Consumer,2023-10-12
+C0159,David,Smit,david.smit159@example.co.za,KwaZulu-Natal,Umhlanga,Consumer,2022-08-28
+C0160,Riaan,Botha,riaan.botha160@example.co.za,Gauteng,Soweto,Business,2022-03-03
+C0161,Fatima,Steyn,fatima.steyn161@example.co.za,KwaZulu-Natal,Pietermaritzburg,Consumer,2025-01-25
+C0162,Katlego,Pillay,katlego.pillay162@example.co.za,Western Cape,George,Consumer,2023-04-21
+C0163,Johan,Mahlangu,johan.mahlangu163@example.co.za,Gauteng,Soweto,Business,2024-11-17
+C0164,Craig,Venter,craig.venter164@example.co.za,Gauteng,Pretoria,Consumer,2023-11-27
+C0165,Fatima,Ngcobo,fatima.ngcobo165@example.co.za,Western Cape,Cape Town,Consumer,2022-10-19
+C0166,Naledi,Abrahams,naledi.abrahams166@example.co.za,Western Cape,Stellenbosch,Consumer,2026-03-07
+C0167,Precious,Jacobs,precious.jacobs167@example.co.za,Gauteng,Soweto,Business,2024-10-23
+C0168,Fatima,Mokoena,fatima.mokoena168@example.co.za,Gauteng,Soweto,Consumer,2025-07-10
+C0169,Lwazi,Mokoena,lwazi.mokoena169@example.co.za,Western Cape,Cape Town,Consumer,2024-06-27
+C0170,Sarah,Molefe,sarah.molefe170@example.co.za,Gauteng,Midrand,Business,2023-10-01
+C0171,Mandla,Zulu,mandla.zulu171@example.co.za,Eastern Cape,East London,Business,2024-08-31
+C0172,Nomvula,Fourie,nomvula.fourie172@example.co.za,Western Cape,George,Consumer,2023-12-20
+C0173,Precious,Khumalo,precious.khumalo173@example.co.za,Mpumalanga,Witbank,Consumer,2024-06-19
+C0174,Ruan,Pillay,ruan.pillay174@example.co.za,Gauteng,Soweto,Consumer,2025-11-19
+C0175,Craig,Mokoena,craig.mokoena175@example.co.za,Eastern Cape,East London,Business,2022-11-14
+C0176,Werner,Fourie,werner.fourie176@example.co.za,Western Cape,Cape Town,Business,2024-08-18
+C0177,Priya,Steyn,priya.steyn177@example.co.za,Gauteng,Johannesburg,Consumer,2024-06-17
+C0178,Johan,Dlamini,johan.dlamini178@example.co.za,Mpumalanga,Witbank,Business,2023-08-25
+C0179,Precious,Petersen,precious.petersen179@example.co.za,Gauteng,Johannesburg,Business,2025-12-11
+C0180,David,Fourie,david.fourie180@example.co.za,Mpumalanga,Witbank,Business,2022-05-13
+C0181,Zanele,Abrahams,zanele.abrahams181@example.co.za,KwaZulu-Natal,Umhlanga,Business,2023-06-09
+C0182,Chantel,Botha,chantel.botha182@example.co.za,Eastern Cape,Gqeberha,Consumer,2026-01-20
+C0183,Thabo,van der Merwe,thabo.vandermerwe183@example.co.za,Gauteng,Midrand,Business,2023-10-22
+C0184,Chantel,Mokoena,chantel.mokoena184@example.co.za,Western Cape,Stellenbosch,Consumer,2025-05-03
+C0185,Annelie,Naidoo,annelie.naidoo185@example.co.za,KwaZulu-Natal,Durban,Consumer,2024-04-22
+C0186,Zanele,Pillay,zanele.pillay186@example.co.za,KwaZulu-Natal,Umhlanga,Consumer,2024-09-30
+C0187,Sibusiso,Jacobs,sibusiso.jacobs187@example.co.za,KwaZulu-Natal,Umhlanga,Consumer,2024-10-08
+C0188,Dandre,du Plessis,dandre.duplessis188@example.co.za,Limpopo,Polokwane,Consumer,2024-02-06
+C0189,Ayesha,Abrahams,ayesha.abrahams189@example.co.za,Northern Cape,Upington,Consumer,2024-09-21
+C0190,Pieter,Petersen,pieter.petersen190@example.co.za,Free State,Welkom,Consumer,2024-04-20
+C0191,Werner,Mahlangu,werner.mahlangu191@example.co.za,KwaZulu-Natal,Umhlanga,Consumer,2025-11-08
+C0192,Thabo,Zulu,thabo.zulu192@example.co.za,Western Cape,Cape Town,Business,2026-05-05
+C0193,Lwazi,Mahlangu,lwazi.mahlangu193@example.co.za,Western Cape,Stellenbosch,Consumer,2024-02-20
+C0194,Pieter,Venter,pieter.venter194@example.co.za,Gauteng,Midrand,Consumer,2026-03-16
+C0195,Dandre,Mokoena,dandre.mokoena195@example.co.za,Eastern Cape,Gqeberha,Business,2025-10-14
+C0196,Sarah,Steyn,sarah.steyn196@example.co.za,Gauteng,Johannesburg,Consumer,2026-04-08
+C0197,Priya,Mahlangu,priya.mahlangu197@example.co.za,Gauteng,Midrand,Consumer,2023-02-23
+C0198,Sarah,du Plessis,sarah.duplessis198@example.co.za,Gauteng,Midrand,Consumer,2023-09-10
+C0199,Kagiso,Pillay,kagiso.pillay199@example.co.za,Free State,Welkom,Consumer,2024-01-23
+C0200,Sibusiso,Dlamini,sibusiso.dlamini200@example.co.za,Free State,Bloemfontein,Consumer,2023-06-06
+C0201,Ruan,Mabaso,ruan.mabaso201@example.co.za,Mpumalanga,Witbank,Business,2025-04-15
+C0202,Sarah,Petersen,sarah.petersen202@example.co.za,Western Cape,Cape Town,Consumer,2022-11-09
+C0203,Dandre,Radebe,dandre.radebe203@example.co.za,Western Cape,Paarl,Consumer,2025-09-28
+C0204,Naledi,Mabaso,naledi.mabaso204@example.co.za,North West,Rustenburg,Consumer,2025-08-20
+C0205,Fatima,Fourie,fatima.fourie205@example.co.za,Mpumalanga,Mbombela,Consumer,2025-09-22
+C0206,Priya,Coetzee,priya.coetzee206@example.co.za,Free State,Welkom,Consumer,2022-10-25
+C0207,Lerato,Mahlangu,lerato.mahlangu207@example.co.za,Gauteng,Soweto,Consumer,2023-06-24
+C0208,Johan,Petersen,johan.petersen208@example.co.za,Mpumalanga,Witbank,Consumer,2026-04-30
+C0209,Fatima,Ngcobo,fatima.ngcobo209@example.co.za,KwaZulu-Natal,Umhlanga,Consumer,2023-01-11
+C0210,Craig,Botha,craig.botha210@example.co.za,Mpumalanga,Witbank,Consumer,2023-09-24
+C0211,Nomvula,Pretorius,nomvula.pretorius211@example.co.za,Gauteng,Soweto,Consumer,2023-06-27
+C0212,Naledi,Mabaso,naledi.mabaso212@example.co.za,Mpumalanga,Witbank,Consumer,2025-10-11
+C0213,David,Jacobs,david.jacobs213@example.co.za,Western Cape,Stellenbosch,Business,2024-09-17
+C0214,Pieter,Abrahams,pieter.abrahams214@example.co.za,Gauteng,Johannesburg,Consumer,2024-01-13
+C0215,Johan,Zulu,johan.zulu215@example.co.za,Gauteng,Pretoria,Consumer,2026-06-15
+C0216,Werner,Pretorius,werner.pretorius216@example.co.za,Western Cape,Stellenbosch,Consumer,2022-12-28
+C0217,Busisiwe,Nkosi,busisiwe.nkosi217@example.co.za,Eastern Cape,East London,Business,2022-12-22
+C0218,Fatima,Jacobs,fatima.jacobs218@example.co.za,Northern Cape,Kimberley,Consumer,2022-04-22
+C0219,Nomvula,Khumalo,nomvula.khumalo219@example.co.za,Gauteng,Midrand,Consumer,2023-08-26
+C0220,Ruan,Ngcobo,ruan.ngcobo220@example.co.za,Gauteng,Johannesburg,Consumer,2024-10-31
+C0221,Nomvula,Molefe,nomvula.molefe221@example.co.za,Western Cape,Cape Town,Consumer,2023-05-28
+C0222,Lerato,Radebe,lerato.radebe222@example.co.za,North West,Potchefstroom,Consumer,2022-05-03
+C0223,Megan,Petersen,megan.petersen223@example.co.za,Gauteng,Soweto,Consumer,2024-11-29
+C0224,Sibusiso,Dlamini,sibusiso.dlamini224@example.co.za,KwaZulu-Natal,Durban,Consumer,2022-12-29
+C0225,Kagiso,Venter,kagiso.venter225@example.co.za,Gauteng,Midrand,Consumer,2025-07-06
+C0226,Sibusiso,Molefe,sibusiso.molefe226@example.co.za,Western Cape,George,Consumer,2026-02-05
+C0227,Craig,Abrahams,craig.abrahams227@example.co.za,Gauteng,Pretoria,Consumer,2023-06-11
+C0228,Mandla,Steyn,mandla.steyn228@example.co.za,Western Cape,George,Consumer,2022-09-11
+C0229,Riaan,Mabaso,riaan.mabaso229@example.co.za,Gauteng,Midrand,Consumer,2023-01-07
+C0230,Megan,Dlamini,megan.dlamini230@example.co.za,KwaZulu-Natal,Durban,Business,2022-09-07
+C0231,Ruan,Radebe,ruan.radebe231@example.co.za,Western Cape,Paarl,Business,2025-04-13
+C0232,Fatima,du Plessis,fatima.duplessis232@example.co.za,Gauteng,Midrand,Consumer,2024-06-19
+C0233,Dandre,Smit,dandre.smit233@example.co.za,Western Cape,George,Business,2026-03-16
+C0234,Ayesha,Venter,ayesha.venter234@example.co.za,Gauteng,Midrand,Consumer,2025-05-27
+C0235,Johan,Mabaso,johan.mabaso235@example.co.za,Western Cape,George,Consumer,2022-10-08
+C0236,Fatima,Sithole,fatima.sithole236@example.co.za,Western Cape,Cape Town,Consumer,2025-05-19
+C0237,Chantel,du Plessis,chantel.duplessis237@example.co.za,Gauteng,Johannesburg,Consumer,2025-11-07
+C0238,Kagiso,Nkosi,kagiso.nkosi238@example.co.za,Free State,Bloemfontein,Consumer,2026-06-09
+C0239,Riaan,Sithole,riaan.sithole239@example.co.za,Gauteng,Johannesburg,Consumer,2022-12-19
+C0240,David,Dlamini,david.dlamini240@example.co.za,KwaZulu-Natal,Durban,Consumer,2022-05-02
+C0241,Tshepo,Pretorius,tshepo.pretorius241@example.co.za,Gauteng,Soweto,Consumer,2024-01-28
+C0242,Ayesha,Radebe,ayesha.radebe242@example.co.za,Gauteng,Midrand,Consumer,2025-05-06
+C0243,Lwazi,van der Merwe,lwazi.vandermerwe243@example.co.za,KwaZulu-Natal,Durban,Consumer,2025-08-17
+C0244,Sipho,Jacobs,sipho.jacobs244@example.co.za,Gauteng,Soweto,Consumer,2024-11-19
+C0245,Chantel,Jacobs,chantel.jacobs245@example.co.za,KwaZulu-Natal,Durban,Consumer,2022-10-20
+C0246,Naledi,Mahlangu,naledi.mahlangu246@example.co.za,Western Cape,George,Consumer,2023-11-22
+C0247,David,Venter,david.venter247@example.co.za,Gauteng,Johannesburg,Consumer,2023-11-08
+C0248,Katlego,Mokoena,katlego.mokoena248@example.co.za,North West,Potchefstroom,Consumer,2022-11-01
+C0249,Ruan,Ngcobo,ruan.ngcobo249@example.co.za,Gauteng,Pretoria,Consumer,2025-02-23
+C0250,Tshepo,du Plessis,tshepo.duplessis250@example.co.za,KwaZulu-Natal,Umhlanga,Business,2022-07-26
+C0251,Ruan,van der Merwe,ruan.vandermerwe251@example.co.za,Western Cape,George,Consumer,2022-08-07
+C0252,Werner,Ngcobo,werner.ngcobo252@example.co.za,Mpumalanga,Witbank,Consumer,2024-07-03
+C0253,David,Nkosi,david.nkosi253@example.co.za,Gauteng,Midrand,Consumer,2025-08-17
+C0254,Precious,Sithole,precious.sithole254@example.co.za,Western Cape,Cape Town,Consumer,2022-10-03
+C0255,Werner,Petersen,werner.petersen255@example.co.za,Gauteng,Johannesburg,Consumer,2023-11-26
+C0256,Zanele,Fourie,zanele.fourie256@example.co.za,Eastern Cape,Gqeberha,Consumer,2025-09-17
+C0257,Tshepo,Pretorius,tshepo.pretorius257@example.co.za,Gauteng,Midrand,Consumer,2025-10-12
+C0258,Zanele,Botha,zanele.botha258@example.co.za,Free State,Bloemfontein,Consumer,2023-02-19
+C0259,Katlego,Smit,katlego.smit259@example.co.za,KwaZulu-Natal,Umhlanga,Consumer,2026-06-30
+C0260,Sibusiso,Smit,sibusiso.smit260@example.co.za,KwaZulu-Natal,Umhlanga,Consumer,2024-09-05
+C0261,Lwazi,Zulu,lwazi.zulu261@example.co.za,KwaZulu-Natal,Umhlanga,Consumer,2025-08-31
+C0262,Craig,Fourie,craig.fourie262@example.co.za,Gauteng,Pretoria,Consumer,2024-10-16
+C0263,Ayesha,Jacobs,ayesha.jacobs263@example.co.za,Western Cape,Cape Town,Consumer,2022-07-30
+C0264,Sibusiso,van der Merwe,sibusiso.vandermerwe264@example.co.za,Gauteng,Johannesburg,Consumer,2023-10-09
+C0265,Elmarie,Dlamini,elmarie.dlamini265@example.co.za,Gauteng,Soweto,Consumer,2025-04-09
+C0266,Ruan,van der Merwe,ruan.vandermerwe266@example.co.za,North West,Potchefstroom,Business,2025-05-14
+C0267,Riaan,Venter,riaan.venter267@example.co.za,KwaZulu-Natal,Pietermaritzburg,Consumer,2022-07-05
+C0268,Sarah,Fourie,sarah.fourie268@example.co.za,Western Cape,Cape Town,Consumer,2023-02-17
+C0269,Precious,Steyn,precious.steyn269@example.co.za,Gauteng,Soweto,Consumer,2025-07-31
+C0270,Nomvula,Mahlangu,nomvula.mahlangu270@example.co.za,Gauteng,Soweto,Consumer,2024-01-22
+C0271,Lerato,Abrahams,lerato.abrahams271@example.co.za,KwaZulu-Natal,Umhlanga,Consumer,2024-01-05
+C0272,Dandre,Petersen,dandre.petersen272@example.co.za,Gauteng,Midrand,Consumer,2025-11-04
+C0273,Busisiwe,Mokoena,busisiwe.mokoena273@example.co.za,North West,Potchefstroom,Consumer,2025-11-19
+C0274,Nomvula,Mahlangu,nomvula.mahlangu274@example.co.za,Gauteng,Soweto,Consumer,2026-02-19
+C0275,Ayesha,du Plessis,ayesha.duplessis275@example.co.za,Limpopo,Tzaneen,Consumer,2024-01-02
+C0276,Dandre,Coetzee,dandre.coetzee276@example.co.za,Free State,Bloemfontein,Consumer,2024-07-15
+C0277,Thabo,Sithole,thabo.sithole277@example.co.za,Western Cape,Paarl,Consumer,2023-05-13
+C0278,Katlego,Pillay,katlego.pillay278@example.co.za,Western Cape,Stellenbosch,Consumer,2022-12-07
+C0279,Ayesha,Botha,ayesha.botha279@example.co.za,Gauteng,Johannesburg,Consumer,2026-06-17
+C0280,Busisiwe,Petersen,busisiwe.petersen280@example.co.za,KwaZulu-Natal,Durban,Consumer,2026-01-17
+C0281,Sarah,Naidoo,sarah.naidoo281@example.co.za,Eastern Cape,East London,Consumer,2024-03-16
+C0282,Zanele,Steyn,zanele.steyn282@example.co.za,KwaZulu-Natal,Umhlanga,Consumer,2026-05-12
+C0283,Zanele,du Plessis,zanele.duplessis283@example.co.za,Eastern Cape,Gqeberha,Consumer,2024-10-16
+C0284,Pieter,Sithole,pieter.sithole284@example.co.za,Limpopo,Tzaneen,Consumer,2023-09-29
+C0285,Tshepo,Molefe,tshepo.molefe285@example.co.za,Eastern Cape,East London,Business,2023-04-13
+C0286,Johan,Jacobs,johan.jacobs286@example.co.za,Free State,Bloemfontein,Consumer,2024-03-30
+C0287,Naledi,Coetzee,naledi.coetzee287@example.co.za,Western Cape,Cape Town,Consumer,2026-06-10
+C0288,Sibusiso,Molefe,sibusiso.molefe288@example.co.za,Gauteng,Pretoria,Business,2022-09-04
+C0289,Zanele,Steyn,zanele.steyn289@example.co.za,North West,Potchefstroom,Business,2024-06-27
+C0290,Tshepo,Sithole,tshepo.sithole290@example.co.za,Gauteng,Pretoria,Consumer,2022-08-15
+C0291,Thabo,Fourie,thabo.fourie291@example.co.za,Western Cape,Cape Town,Business,2025-10-22
+C0292,Johan,Mokoena,johan.mokoena292@example.co.za,Gauteng,Johannesburg,Consumer,2024-10-23
+C0293,Johan,Smit,johan.smit293@example.co.za,KwaZulu-Natal,Umhlanga,Consumer,2025-08-12
+C0294,Sipho,Nkosi,sipho.nkosi294@example.co.za,Gauteng,Midrand,Consumer,2023-01-01
+C0295,Ruan,Venter,ruan.venter295@example.co.za,Western Cape,George,Consumer,2023-10-12
+C0296,Naledi,van der Merwe,naledi.vandermerwe296@example.co.za,Gauteng,Pretoria,Consumer,2025-08-27
+C0297,Naledi,Pillay,naledi.pillay297@example.co.za,Western Cape,Cape Town,Consumer,2025-05-21
+C0298,Johan,Mahlangu,johan.mahlangu298@example.co.za,Gauteng,Soweto,Consumer,2024-02-21
+C0299,Chantel,Naidoo,chantel.naidoo299@example.co.za,Gauteng,Johannesburg,Consumer,2024-03-08
+C0300,Tshepo,du Plessis,tshepo.duplessis300@example.co.za,Gauteng,Johannesburg,Consumer,2024-10-18
+C0301,David,Sithole,david.sithole301@example.co.za,Gauteng,Midrand,Consumer,2024-03-01
+C0302,Nomvula,Khumalo,nomvula.khumalo302@example.co.za,Eastern Cape,Gqeberha,Consumer,2026-04-14
+C0303,Johan,van der Merwe,johan.vandermerwe303@example.co.za,Eastern Cape,East London,Consumer,2025-10-07
+C0304,Katlego,Mabaso,katlego.mabaso304@example.co.za,Gauteng,Soweto,Business,2024-11-05
+C0305,Sarah,Mokoena,sarah.mokoena305@example.co.za,KwaZulu-Natal,Durban,Consumer,2024-09-23
+C0306,Pieter,van der Merwe,pieter.vandermerwe306@example.co.za,Gauteng,Pretoria,Business,2023-12-07
+C0307,Tshepo,Petersen,tshepo.petersen307@example.co.za,Limpopo,Tzaneen,Consumer,2026-05-21
+C0308,Ayesha,Sithole,ayesha.sithole308@example.co.za,KwaZulu-Natal,Durban,Business,2024-01-09
+C0309,Sarah,Sithole,sarah.sithole309@example.co.za,Gauteng,Soweto,Business,2026-05-01
+C0310,David,Fourie,david.fourie310@example.co.za,Western Cape,Stellenbosch,Consumer,2024-12-13
+C0311,Sarah,Molefe,sarah.molefe311@example.co.za,Western Cape,Paarl,Business,2026-03-29
+C0312,Chantel,Venter,chantel.venter312@example.co.za,Western Cape,Stellenbosch,Consumer,2023-12-18
+C0313,Riaan,Mabaso,riaan.mabaso313@example.co.za,Gauteng,Midrand,Consumer,2025-07-17
+C0314,Annelie,Coetzee,annelie.coetzee314@example.co.za,KwaZulu-Natal,Pietermaritzburg,Consumer,2022-05-26
+C0315,Priya,Sithole,priya.sithole315@example.co.za,Eastern Cape,East London,Consumer,2022-06-26
+C0316,Craig,Petersen,craig.petersen316@example.co.za,Gauteng,Midrand,Consumer,2026-05-14
+C0317,Thabo,Mokoena,thabo.mokoena317@example.co.za,KwaZulu-Natal,Umhlanga,Consumer,2024-08-14
+C0318,Sipho,Khumalo,sipho.khumalo318@example.co.za,Gauteng,Midrand,Consumer,2025-05-05
+C0319,Johan,Mabaso,johan.mabaso319@example.co.za,Gauteng,Soweto,Business,2024-03-31
+C0320,Sipho,Zulu,sipho.zulu320@example.co.za,Western Cape,Stellenbosch,Consumer,2024-05-24
+C0321,Kagiso,Khumalo,kagiso.khumalo321@example.co.za,Gauteng,Johannesburg,Consumer,2023-03-17
+C0322,David,du Plessis,david.duplessis322@example.co.za,Western Cape,Cape Town,Consumer,2023-08-16
+C0323,Pieter,Venter,pieter.venter323@example.co.za,KwaZulu-Natal,Pietermaritzburg,Consumer,2024-11-30
+C0324,Johan,Dlamini,johan.dlamini324@example.co.za,Gauteng,Soweto,Consumer,2026-02-28
+C0325,Sipho,Mabaso,sipho.mabaso325@example.co.za,Western Cape,Paarl,Consumer,2026-02-21
+C0326,Fatima,Mahlangu,fatima.mahlangu326@example.co.za,Gauteng,Midrand,Business,2026-02-25
+C0327,Precious,Abrahams,precious.abrahams327@example.co.za,KwaZulu-Natal,Durban,Business,2025-01-05
+C0328,Pieter,Mokoena,pieter.mokoena328@example.co.za,Gauteng,Pretoria,Business,2022-04-23
+C0329,Werner,Sithole,werner.sithole329@example.co.za,Western Cape,George,Business,2025-04-03
+C0330,Lwazi,Dlamini,lwazi.dlamini330@example.co.za,Gauteng,Johannesburg,Consumer,2026-03-08
+C0331,Tshepo,Ngcobo,tshepo.ngcobo331@example.co.za,KwaZulu-Natal,Pietermaritzburg,Business,2022-07-30
+C0332,Riaan,Abrahams,riaan.abrahams332@example.co.za,Gauteng,Johannesburg,Consumer,2025-12-22
+C0333,Johan,Smit,johan.smit333@example.co.za,Western Cape,Stellenbosch,Consumer,2022-11-20
+C0334,Priya,van der Merwe,priya.vandermerwe334@example.co.za,Western Cape,Cape Town,Consumer,2023-11-13
+C0335,Riaan,Coetzee,riaan.coetzee335@example.co.za,Gauteng,Pretoria,Consumer,2025-01-26
+C0336,Elmarie,Dlamini,elmarie.dlamini336@example.co.za,Mpumalanga,Witbank,Consumer,2025-04-02
+C0337,Craig,Mahlangu,craig.mahlangu337@example.co.za,Gauteng,Johannesburg,Consumer,2023-02-09
+C0338,Werner,Mokoena,werner.mokoena338@example.co.za,KwaZulu-Natal,Durban,Consumer,2026-03-15
+C0339,Riaan,Zulu,riaan.zulu339@example.co.za,Limpopo,Polokwane,Business,2022-04-28
+C0340,Craig,Smit,craig.smit340@example.co.za,Gauteng,Midrand,Consumer,2026-06-18
+C0341,Busisiwe,Abrahams,busisiwe.abrahams341@example.co.za,KwaZulu-Natal,Durban,Consumer,2025-09-05
+C0342,Craig,Mahlangu,craig.mahlangu342@example.co.za,Western Cape,George,Consumer,2026-01-01
+C0343,Sibusiso,Dlamini,sibusiso.dlamini343@example.co.za,Western Cape,Cape Town,Consumer,2024-06-29
+C0344,Pieter,Fourie,pieter.fourie344@example.co.za,Western Cape,Stellenbosch,Consumer,2026-03-11
+C0345,Elmarie,Sithole,elmarie.sithole345@example.co.za,Gauteng,Soweto,Consumer,2024-03-28
+C0346,Naledi,Fourie,naledi.fourie346@example.co.za,Western Cape,Stellenbosch,Consumer,2023-08-30
+C0347,Johan,Botha,johan.botha347@example.co.za,Western Cape,Cape Town,Consumer,2024-04-25
+C0348,Chantel,Khumalo,chantel.khumalo348@example.co.za,Mpumalanga,Mbombela,Business,2025-05-27
+C0349,Pieter,Smit,pieter.smit349@example.co.za,Eastern Cape,Gqeberha,Consumer,2025-01-18
+C0350,Lwazi,Mahlangu,lwazi.mahlangu350@example.co.za,Western Cape,George,Consumer,2024-05-14
+C0351,Zanele,Pretorius,zanele.pretorius351@example.co.za,Western Cape,Paarl,Consumer,2023-09-28
+C0352,Lwazi,Abrahams,lwazi.abrahams352@example.co.za,Western Cape,George,Consumer,2022-03-17
+C0353,Chantel,Mokoena,chantel.mokoena353@example.co.za,Free State,Welkom,Consumer,2026-06-12
+C0354,Lerato,Petersen,lerato.petersen354@example.co.za,Western Cape,Cape Town,Consumer,2023-04-03
+C0355,Ayesha,Dlamini,ayesha.dlamini355@example.co.za,Western Cape,George,Consumer,2026-06-13
+C0356,Mandla,Venter,mandla.venter356@example.co.za,Western Cape,Cape Town,Consumer,2022-09-15
+C0357,Sarah,Fourie,sarah.fourie357@example.co.za,Western Cape,Paarl,Consumer,2023-04-12
+C0358,David,Molefe,david.molefe358@example.co.za,KwaZulu-Natal,Durban,Consumer,2022-12-06
+C0359,Sarah,Pillay,sarah.pillay359@example.co.za,KwaZulu-Natal,Umhlanga,Consumer,2025-07-24
+C0360,Johan,Fourie,johan.fourie360@example.co.za,Mpumalanga,Witbank,Consumer,2025-08-14
+C0361,Ayesha,Zulu,ayesha.zulu361@example.co.za,Eastern Cape,East London,Consumer,2025-01-07
+C0362,Precious,Zulu,precious.zulu362@example.co.za,Western Cape,Paarl,Consumer,2022-04-04
+C0363,Dandre,Botha,dandre.botha363@example.co.za,Western Cape,George,Consumer,2026-03-25
+C0364,Craig,Nkosi,craig.nkosi364@example.co.za,Mpumalanga,Witbank,Consumer,2025-11-02
+C0365,Katlego,Zulu,katlego.zulu365@example.co.za,Eastern Cape,Gqeberha,Consumer,2025-06-08
+C0366,Tshepo,Abrahams,tshepo.abrahams366@example.co.za,Western Cape,George,Consumer,2025-12-24
+C0367,Werner,Coetzee,werner.coetzee367@example.co.za,Gauteng,Johannesburg,Consumer,2024-08-20
+C0368,Johan,Ngcobo,johan.ngcobo368@example.co.za,Gauteng,Pretoria,Consumer,2025-08-04
+C0369,Elmarie,Radebe,elmarie.radebe369@example.co.za,Limpopo,Polokwane,Consumer,2025-01-26
+C0370,Riaan,Mabaso,riaan.mabaso370@example.co.za,Gauteng,Soweto,Consumer,2023-12-03
+C0371,Sibusiso,du Plessis,sibusiso.duplessis371@example.co.za,North West,Potchefstroom,Consumer,2025-12-14
+C0372,Ruan,Mabaso,ruan.mabaso372@example.co.za,Eastern Cape,East London,Consumer,2023-03-29
+C0373,Kagiso,du Plessis,kagiso.duplessis373@example.co.za,North West,Potchefstroom,Consumer,2023-10-31
+C0374,Precious,Pretorius,precious.pretorius374@example.co.za,Eastern Cape,East London,Consumer,2024-02-13
+C0375,Priya,Radebe,priya.radebe375@example.co.za,KwaZulu-Natal,Pietermaritzburg,Consumer,2025-05-18
+C0376,David,Petersen,david.petersen376@example.co.za,KwaZulu-Natal,Pietermaritzburg,Business,2022-12-25
+C0377,Ayesha,Coetzee,ayesha.coetzee377@example.co.za,Gauteng,Johannesburg,Consumer,2024-08-22
+C0378,Ruan,Pillay,ruan.pillay378@example.co.za,KwaZulu-Natal,Durban,Consumer,2025-03-08
+C0379,Fatima,Coetzee,fatima.coetzee379@example.co.za,Gauteng,Midrand,Consumer,2025-08-12
+C0380,Zanele,Khumalo,zanele.khumalo380@example.co.za,Eastern Cape,Gqeberha,Consumer,2025-02-20
+C0381,Zanele,van der Merwe,zanele.vandermerwe381@example.co.za,Gauteng,Johannesburg,Consumer,2026-03-09
+C0382,Dandre,Smit,dandre.smit382@example.co.za,Western Cape,Stellenbosch,Consumer,2025-04-01
+C0383,Annelie,Ngcobo,annelie.ngcobo383@example.co.za,Northern Cape,Upington,Consumer,2023-04-13
+C0384,Ayesha,Fourie,ayesha.fourie384@example.co.za,Eastern Cape,East London,Consumer,2026-06-22
+C0385,Werner,Khumalo,werner.khumalo385@example.co.za,Gauteng,Johannesburg,Business,2023-02-22
+C0386,Mandla,Naidoo,mandla.naidoo386@example.co.za,Western Cape,Cape Town,Business,2024-05-22
+C0387,Annelie,Radebe,annelie.radebe387@example.co.za,Eastern Cape,East London,Business,2022-03-19
+C0388,Busisiwe,Botha,busisiwe.botha388@example.co.za,Gauteng,Midrand,Consumer,2025-10-04
+C0389,Megan,Mokoena,megan.mokoena389@example.co.za,Western Cape,George,Consumer,2022-10-17
+C0390,Ruan,Steyn,ruan.steyn390@example.co.za,Gauteng,Midrand,Consumer,2022-03-29
+C0391,Sarah,Mahlangu,sarah.mahlangu391@example.co.za,Eastern Cape,Gqeberha,Consumer,2025-09-29
+C0392,Mandla,Ngcobo,mandla.ngcobo392@example.co.za,Mpumalanga,Witbank,Consumer,2025-11-30
+C0393,Johan,Pillay,johan.pillay393@example.co.za,Gauteng,Midrand,Business,2022-03-14
+C0394,Zanele,Steyn,zanele.steyn394@example.co.za,Gauteng,Midrand,Business,2023-11-09
+C0395,Werner,Nkosi,werner.nkosi395@example.co.za,KwaZulu-Natal,Pietermaritzburg,Consumer,2026-01-17
+C0396,Dandre,Botha,dandre.botha396@example.co.za,Gauteng,Soweto,Consumer,2024-06-08
+C0397,Priya,Coetzee,priya.coetzee397@example.co.za,KwaZulu-Natal,Pietermaritzburg,Consumer,2025-09-29
+C0398,Ayesha,Sithole,ayesha.sithole398@example.co.za,Limpopo,Polokwane,Consumer,2022-11-29
+C0399,Sibusiso,Radebe,sibusiso.radebe399@example.co.za,Western Cape,Paarl,Consumer,2025-03-29
+C0400,Katlego,du Plessis,katlego.duplessis400@example.co.za,Limpopo,Polokwane,Consumer,2025-12-23
+C0401,Elmarie,Dlamini,elmarie.dlamini401@example.co.za,Eastern Cape,East London,Consumer,2024-03-10
+C0402,Werner,Botha,werner.botha402@example.co.za,Gauteng,Johannesburg,Business,2024-12-30
+C0403,Fatima,Mokoena,fatima.mokoena403@example.co.za,Gauteng,Pretoria,Consumer,2025-01-29
+C0404,Dandre,Pretorius,dandre.pretorius404@example.co.za,Western Cape,George,Consumer,2025-01-09
+C0405,Lerato,Steyn,lerato.steyn405@example.co.za,Western Cape,Stellenbosch,Consumer,2024-09-21
+C0406,Fatima,Steyn,fatima.steyn406@example.co.za,KwaZulu-Natal,Umhlanga,Business,2026-03-21
+C0407,Kagiso,Nkosi,kagiso.nkosi407@example.co.za,Gauteng,Pretoria,Consumer,2022-06-01
+C0408,Precious,Dlamini,precious.dlamini408@example.co.za,Western Cape,Cape Town,Business,2022-07-20
+C0409,Megan,van der Merwe,megan.vandermerwe409@example.co.za,Northern Cape,Upington,Consumer,2026-06-22
+C0410,Craig,Radebe,craig.radebe410@example.co.za,Gauteng,Soweto,Consumer,2024-04-22
+C0411,Priya,Petersen,priya.petersen411@example.co.za,Western Cape,George,Consumer,2025-11-15
+C0412,Johan,Abrahams,johan.abrahams412@example.co.za,Mpumalanga,Witbank,Consumer,2025-03-05
+C0413,Johan,Radebe,johan.radebe413@example.co.za,Western Cape,Stellenbosch,Business,2026-05-27
+C0414,Ayesha,Steyn,ayesha.steyn414@example.co.za,Gauteng,Soweto,Consumer,2023-06-14
+C0415,Nomvula,Mokoena,nomvula.mokoena415@example.co.za,Gauteng,Midrand,Consumer,2026-03-24
+C0416,Lerato,Mabaso,lerato.mabaso416@example.co.za,Eastern Cape,East London,Consumer,2022-04-02
+C0417,Sipho,Botha,sipho.botha417@example.co.za,Gauteng,Johannesburg,Consumer,2025-12-06
+C0418,Lerato,Khumalo,lerato.khumalo418@example.co.za,KwaZulu-Natal,Umhlanga,Consumer,2024-08-15
+C0419,Pieter,Smit,pieter.smit419@example.co.za,Gauteng,Johannesburg,Consumer,2023-10-14
+C0420,Priya,Radebe,priya.radebe420@example.co.za,Gauteng,Midrand,Consumer,2026-06-30
+C0421,Riaan,Khumalo,riaan.khumalo421@example.co.za,KwaZulu-Natal,Pietermaritzburg,Business,2025-11-12
+C0422,Chantel,Mahlangu,chantel.mahlangu422@example.co.za,Western Cape,Paarl,Consumer,2025-06-24
+C0423,Priya,Naidoo,priya.naidoo423@example.co.za,Mpumalanga,Witbank,Consumer,2022-06-05
+C0424,Craig,Mabaso,craig.mabaso424@example.co.za,Northern Cape,Upington,Business,2023-12-13
+C0425,Chantel,Mokoena,chantel.mokoena425@example.co.za,KwaZulu-Natal,Pietermaritzburg,Consumer,2026-05-24
+C0426,Zanele,Khumalo,zanele.khumalo426@example.co.za,Western Cape,Paarl,Business,2022-12-21
+C0427,Priya,van der Merwe,priya.vandermerwe427@example.co.za,Free State,Welkom,Business,2025-04-15
+C0428,David,Khumalo,david.khumalo428@example.co.za,Western Cape,Paarl,Consumer,2025-10-15
+C0429,Sibusiso,Sithole,sibusiso.sithole429@example.co.za,Gauteng,Johannesburg,Consumer,2023-03-26
+C0430,David,Mabaso,david.mabaso430@example.co.za,Gauteng,Johannesburg,Business,2023-03-21
+C0431,Werner,Radebe,werner.radebe431@example.co.za,Free State,Bloemfontein,Consumer,2024-01-11
+C0432,Priya,Nkosi,priya.nkosi432@example.co.za,Gauteng,Pretoria,Business,2026-04-27
+C0433,Katlego,Pillay,katlego.pillay433@example.co.za,Gauteng,Pretoria,Consumer,2026-02-09
+C0434,Priya,Khumalo,priya.khumalo434@example.co.za,Gauteng,Midrand,Consumer,2024-04-18
+C0435,Craig,Sithole,craig.sithole435@example.co.za,Western Cape,Paarl,Consumer,2025-01-14
+C0436,Sibusiso,Botha,sibusiso.botha436@example.co.za,Mpumalanga,Witbank,Consumer,2023-12-16
+C0437,Nomvula,Fourie,nomvula.fourie437@example.co.za,Limpopo,Tzaneen,Consumer,2023-05-28
+C0438,Thabo,Jacobs,thabo.jacobs438@example.co.za,Eastern Cape,East London,Consumer,2023-04-06
+C0439,David,Zulu,david.zulu439@example.co.za,Gauteng,Pretoria,Consumer,2025-10-31
+C0440,Riaan,Jacobs,riaan.jacobs440@example.co.za,North West,Potchefstroom,Business,2025-10-05
+C0441,Sibusiso,Naidoo,sibusiso.naidoo441@example.co.za,Eastern Cape,East London,Consumer,2026-03-15
+C0442,Annelie,du Plessis,annelie.duplessis442@example.co.za,Western Cape,Cape Town,Consumer,2022-07-31
+C0443,Dandre,van der Merwe,dandre.vandermerwe443@example.co.za,North West,Rustenburg,Consumer,2025-09-12
+C0444,Precious,Mokoena,precious.mokoena444@example.co.za,Gauteng,Johannesburg,Consumer,2024-09-19
+C0445,Busisiwe,Abrahams,busisiwe.abrahams445@example.co.za,Western Cape,George,Consumer,2022-04-02
+C0446,Fatima,Ngcobo,fatima.ngcobo446@example.co.za,Gauteng,Johannesburg,Consumer,2026-03-19
+C0447,Ayesha,Nkosi,ayesha.nkosi447@example.co.za,Gauteng,Soweto,Business,2023-03-03
+C0448,Naledi,Molefe,naledi.molefe448@example.co.za,Gauteng,Pretoria,Consumer,2025-08-21
+C0449,Mandla,Sithole,mandla.sithole449@example.co.za,Western Cape,Paarl,Business,2022-08-09
+C0450,David,Steyn,david.steyn450@example.co.za,Western Cape,Stellenbosch,Business,2023-06-06
+C0451,Mandla,Dlamini,mandla.dlamini451@example.co.za,Gauteng,Johannesburg,Consumer,2024-04-15
+C0452,Megan,van der Merwe,megan.vandermerwe452@example.co.za,Western Cape,Cape Town,Consumer,2022-08-17
+C0453,Chantel,Abrahams,chantel.abrahams453@example.co.za,Western Cape,Paarl,Consumer,2022-09-12
+C0454,Priya,van der Merwe,priya.vandermerwe454@example.co.za,Mpumalanga,Mbombela,Consumer,2026-01-16
+C0455,Megan,Jacobs,megan.jacobs455@example.co.za,Mpumalanga,Mbombela,Business,2025-12-31
+C0456,Lwazi,du Plessis,lwazi.duplessis456@example.co.za,Limpopo,Polokwane,Consumer,2023-12-05
+C0457,Pieter,Zulu,pieter.zulu457@example.co.za,Gauteng,Pretoria,Consumer,2026-02-27
+C0458,Priya,Dlamini,priya.dlamini458@example.co.za,Free State,Welkom,Consumer,2023-07-06
+C0459,Elmarie,Petersen,elmarie.petersen459@example.co.za,KwaZulu-Natal,Umhlanga,Business,2024-01-09
+C0460,Ruan,Mokoena,ruan.mokoena460@example.co.za,Western Cape,Cape Town,Consumer,2024-02-07
+C0461,Chantel,Khumalo,chantel.khumalo461@example.co.za,Gauteng,Johannesburg,Consumer,2026-06-22
+C0462,Busisiwe,Petersen,busisiwe.petersen462@example.co.za,KwaZulu-Natal,Pietermaritzburg,Consumer,2023-09-11
+C0463,Sibusiso,Pillay,sibusiso.pillay463@example.co.za,Eastern Cape,Gqeberha,Consumer,2024-04-07
+C0464,Dandre,Zulu,dandre.zulu464@example.co.za,Western Cape,George,Consumer,2025-08-18
+C0465,Zanele,Coetzee,zanele.coetzee465@example.co.za,Gauteng,Johannesburg,Consumer,2023-01-10
+C0466,Sarah,Abrahams,sarah.abrahams466@example.co.za,Western Cape,Stellenbosch,Consumer,2023-12-09
+C0467,Sipho,Nkosi,sipho.nkosi467@example.co.za,Western Cape,Paarl,Consumer,2026-06-07
+C0468,Johan,Dlamini,johan.dlamini468@example.co.za,Gauteng,Pretoria,Consumer,2025-04-14
+C0469,Chantel,Botha,chantel.botha469@example.co.za,Western Cape,Cape Town,Consumer,2025-04-09
+C0470,Busisiwe,Fourie,busisiwe.fourie470@example.co.za,Gauteng,Soweto,Consumer,2024-06-25
+C0471,Sipho,Radebe,sipho.radebe471@example.co.za,Western Cape,Stellenbosch,Consumer,2023-02-11
+C0472,Annelie,Mokoena,annelie.mokoena472@example.co.za,KwaZulu-Natal,Pietermaritzburg,Consumer,2024-12-04
+C0473,Annelie,Ngcobo,annelie.ngcobo473@example.co.za,Gauteng,Midrand,Consumer,2024-11-16
+C0474,Nomvula,Jacobs,nomvula.jacobs474@example.co.za,Eastern Cape,Gqeberha,Consumer,2024-12-10
+C0475,Pieter,Steyn,pieter.steyn475@example.co.za,KwaZulu-Natal,Durban,Consumer,2022-03-14
+C0476,Riaan,Venter,riaan.venter476@example.co.za,North West,Potchefstroom,Business,2024-01-04
+C0477,Chantel,Abrahams,chantel.abrahams477@example.co.za,Western Cape,Stellenbosch,Consumer,2025-07-18
+C0478,Pieter,Pillay,pieter.pillay478@example.co.za,North West,Potchefstroom,Consumer,2024-05-24
+C0479,Ayesha,Radebe,ayesha.radebe479@example.co.za,North West,Potchefstroom,Business,2023-07-10
+C0480,Kagiso,Petersen,kagiso.petersen480@example.co.za,Gauteng,Midrand,Consumer,2025-04-28
+C0481,Fatima,Naidoo,fatima.naidoo481@example.co.za,Gauteng,Johannesburg,Business,2024-10-01
+C0482,Pieter,Steyn,pieter.steyn482@example.co.za,North West,Potchefstroom,Business,2022-07-20
+C0483,Sarah,Ngcobo,sarah.ngcobo483@example.co.za,Free State,Welkom,Consumer,2023-11-11
+C0484,Dandre,Mokoena,dandre.mokoena484@example.co.za,Gauteng,Soweto,Business,2022-07-30
+C0485,Busisiwe,Pillay,busisiwe.pillay485@example.co.za,Western Cape,George,Consumer,2026-01-15
+C0486,Lerato,Sithole,lerato.sithole486@example.co.za,Western Cape,Cape Town,Consumer,2023-07-22
+C0487,Nomvula,Naidoo,nomvula.naidoo487@example.co.za,KwaZulu-Natal,Umhlanga,Consumer,2025-04-27
+C0488,Dandre,Abrahams,dandre.abrahams488@example.co.za,Northern Cape,Upington,Business,2024-01-09
+C0489,Chantel,Botha,chantel.botha489@example.co.za,North West,Rustenburg,Consumer,2023-05-29
+C0490,Tshepo,du Plessis,tshepo.duplessis490@example.co.za,Western Cape,Stellenbosch,Consumer,2024-05-10
+C0491,Dandre,Zulu,dandre.zulu491@example.co.za,Western Cape,Stellenbosch,Consumer,2022-04-20
+C0492,Ayesha,Ngcobo,ayesha.ngcobo492@example.co.za,Western Cape,Cape Town,Consumer,2026-04-04
+C0493,Ayesha,Fourie,ayesha.fourie493@example.co.za,Gauteng,Soweto,Business,2025-01-31
+C0494,Megan,Botha,megan.botha494@example.co.za,Western Cape,George,Consumer,2024-09-12
+C0495,Ayesha,van der Merwe,ayesha.vandermerwe495@example.co.za,Gauteng,Johannesburg,Consumer,2024-02-01
+C0496,Dandre,Naidoo,dandre.naidoo496@example.co.za,KwaZulu-Natal,Umhlanga,Consumer,2023-02-21
+C0497,Riaan,du Plessis,riaan.duplessis497@example.co.za,Western Cape,George,Business,2023-06-18
+C0498,Craig,Naidoo,craig.naidoo498@example.co.za,Eastern Cape,Gqeberha,Consumer,2024-08-02
+C0499,Ruan,Venter,ruan.venter499@example.co.za,Western Cape,Stellenbosch,Consumer,2024-07-27
+C0500,Precious,Pretorius,precious.pretorius500@example.co.za,Western Cape,Stellenbosch,Consumer,2026-02-09
