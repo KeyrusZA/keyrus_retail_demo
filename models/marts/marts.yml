@@ -3,53 +3,96 @@ version: 2
 models:
   - name: dim_customers
     description: >
-      Customer dimension: one row per customer with province, segment and
-      lifetime order stats. Joined to facts through the semantic layer.
+      Customer dimension: one row per customer with province, segment and lifetime order stats. Joined to facts through the semantic layer.
+       Customer dimension semantic model. Joined to facts by the Semantic Layer through the customer entity — Tableau never has to define this join itself.
     columns:
       - name: customer_id
         description: Unique customer identifier (primary key).
         tests:
           - unique
           - not_null
+        entity:
+          type: primary
+          name: customer
       - name: province
         description: South African province, used as a core reporting dimension.
         tests:
           - not_null
 
+        dimension:
+          type: categorical
+      - name: city
+        dimension:
+          type: categorical
+      - name: customer_segment
+        dimension:
+          type: categorical
+    semantic_model:
+      enabled: true
+      name: dim_customers
   - name: fct_orders
-    description: >
-      Order fact: one row per order header with rolled-up line item amounts
-      in ZAR. Cancelled and returned orders are kept with a status flag so
-      that metric definitions decide what counts as revenue.
+    description: >-
+      Order fact: one row per order header with rolled-up line item amounts in ZAR. Cancelled and returned orders are kept with a status flag so that metric definitions decide what counts as revenue.
+       Order-header grain semantic model, used for order counts.
     columns:
       - name: order_id
         description: Unique order identifier (primary key).
         tests:
           - unique
           - not_null
+        entity:
+          type: primary
+          name: order_record
       - name: customer_id
         description: Foreign key to dim_customers.
         tests:
           - not_null
           - relationships:
-              to: ref('dim_customers')
-              field: customer_id
+              arguments:
+                to: ref('dim_customers')
+                field: customer_id
+        entity:
+          type: foreign
+          name: customer
       - name: net_amount_zar
         description: Gross amount minus discounts, in ZAR.
         tests:
           - not_null
 
+      - name: order_date
+        dimension:
+          type: time
+        granularity: day
+      - name: order_status
+        dimension:
+          type: categorical
+    semantic_model:
+      enabled: true
+      name: fct_orders
+    agg_time_dimension: order_date
+    metrics:
+      - name: total_orders
+        label: Total Orders
+        description: Count of completed orders.
+        type: simple
+        filter: |
+          {{ Dimension('order_record__order_status') }} = 'completed'
+
+        agg: count
+        expr: order_id
   - name: fct_order_items
     description: >
-      Order line item fact: one row per item sold, enriched with product
-      category and order attributes. This is the model the dbt Semantic
-      Layer metrics are defined on.
+      Order line item fact: one row per item sold, enriched with product category and order attributes. This is the model the dbt Semantic Layer metrics are defined on.
+       Line-item grain semantic model. Revenue metrics are defined on this model so they can be sliced by product category, channel and (via the customer entity join) province.
     columns:
       - name: order_item_id
         description: Unique line item identifier (primary key).
         tests:
           - unique
           - not_null
+        entity:
+          type: primary
+          name: order_item
       - name: net_amount_zar
         description: Line net revenue in ZAR (gross minus line discount).
         tests:
@@ -59,6 +102,69 @@ models:
         tests:
           - not_null
 
+        dimension:
+          type: categorical
+      - name: order_id
+        entity:
+          type: foreign
+          name: order_record
+      - name: customer_id
+        entity:
+          type: foreign
+          name: customer
+      - name: order_date
+        dimension:
+          type: time
+        granularity: day
+      - name: product_name
+        dimension:
+          type: categorical
+      - name: channel
+        dimension:
+          type: categorical
+      - name: payment_method
+        dimension:
+          type: categorical
+      - name: order_status
+        dimension:
+          type: categorical
+    semantic_model:
+      enabled: true
+      name: fct_order_items
+    agg_time_dimension: order_date
+    metrics:
+      - name: gross_revenue
+        label: Gross Revenue (ZAR)
+        description: Total quantity x unit price before discounts, all orders.
+        type: simple
+        agg: sum
+        expr: gross_amount_zar
+      - name: total_discounts
+        label: Total Discounts (ZAR)
+        description: Total discount value given away.
+        type: simple
+        agg: sum
+        expr: discount_zar
+      - name: net_revenue
+        label: Net Revenue (ZAR)
+        description: >
+          Gross revenue minus discounts. The single, governed definition of
+          net revenue for all reporting.
+        type: simple
+        agg: sum
+        expr: net_amount_zar
+      - name: items_sold
+        label: Items Sold
+        description: Total units sold across all order lines.
+        type: simple
+        agg: sum
+        expr: quantity
+      - name: cost_zar
+        label: Cost amount
+        agg: sum
+        expr: cost_amount_zar
+        type: simple
+        hidden: true
 exposures:
   - name: retail_performance_dashboard
     label: Retail Performance Dashboard (Tableau)

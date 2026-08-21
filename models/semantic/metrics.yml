@@ -1,67 +1,9 @@
 version: 2
 
 metrics:
-  - name: gross_revenue
-    label: Gross Revenue (ZAR)
-    description: Total quantity x unit price before discounts, all orders.
-    type: simple
-    type_params:
-      measure: gross_revenue_zar
-
-  - name: total_discounts
-    label: Total Discounts (ZAR)
-    description: Total discount value given away.
-    type: simple
-    type_params:
-      measure: discounts_zar
-
-  # ------------------------------------------------------------------
-  # NET REVENUE — the governed definition every dashboard must agree on.
-  #
-  # DEMO NOTE (live edit 1): this starting version matches the naive
-  # Tableau calculated field — it still counts returned and cancelled
-  # orders. During the demo, add the filter below to fix the definition
-  # in ONE governed place:
-  #
-  #     filter: |
-  #       {{ Dimension('order_item__order_status') }} = 'completed'
-  #
-  # DEMO NOTE (live edit 2, "close the loop"): gift cards are deferred
-  # revenue and shouldn't count. Extend the filter to:
-  #
-  #     filter: |
-  #       {{ Dimension('order_item__order_status') }} = 'completed'
-  #       and {{ Dimension('order_item__product_category') }} != 'Gift Cards'
-  # ------------------------------------------------------------------
-  - name: net_revenue
-    label: Net Revenue (ZAR)
-    description: >
-      Gross revenue minus discounts. The single, governed definition of
-      net revenue for all reporting.
-    type: simple
-    type_params:
-      measure: net_revenue_zar
-
-  - name: items_sold
-    label: Items Sold
-    description: Total units sold across all order lines.
-    type: simple
-    type_params:
-      measure: items_sold
-
-  - name: total_orders
-    label: Total Orders
-    description: Count of completed orders.
-    type: simple
-    type_params:
-      measure: order_count
-    filter: |
-      {{ Dimension('order_record__order_status') }} = 'completed'
-
   - name: average_order_value
     label: Average Order Value (ZAR)
     description: Net revenue divided by completed order count.
     type: ratio
-    type_params:
-      numerator: net_revenue
-      denominator: total_orders
+    numerator: net_revenue
+    denominator: total_orders
